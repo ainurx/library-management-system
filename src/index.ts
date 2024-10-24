@@ -1,5 +1,6 @@
 import express, { Express, Request, Response} from 'express'
-require('dotenv').config()
+import 'dotenv/config'
+
 const app: Express = express()
 
 app.get('/', (req: Request, res: Response)=>{
@@ -7,5 +8,5 @@ app.get('/', (req: Request, res: Response)=>{
 })
 
 app.listen(process.env.PORT, ()=> {
-    console.log("TS server is running ...")
+    console.log(`TS server is running on ...${process.env.PORT}`)
 })
