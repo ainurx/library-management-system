@@ -1,6 +1,7 @@
 import { Transaction } from "sequelize";
 
-import Books from "../models/Books"; 
+// import {Books} from "../models/index"; 
+import Books from "../models/Books";
 import { TBookPayload } from "../types/types";
 
 const create = (payload: TBookPayload, transaction: Transaction):Promise<Books> => Books.create(payload, { transaction })

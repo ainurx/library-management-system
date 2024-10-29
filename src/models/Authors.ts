@@ -25,7 +25,7 @@ Authors.init(
     {
         sequelize,
         tableName: 'authors',
-        timestamps: true
+        timestamps: false
     }
 )
 

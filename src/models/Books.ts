@@ -46,14 +46,14 @@ Books.init(
     {
         sequelize,
         tableName: 'books',
-        timestamps: true
+        timestamps: false
     }
 )
 
-Books.belongsTo(Authors, {
-    foreignKey: 'authorId',
-    onDelete: 'CASCADE',
-    as: 'authors'
-})
+// Books.belongsTo(Authors, {
+//     foreignKey: 'authorId',
+//     onDelete: 'CASCADE',
+//     as: 'author'
+// })
 
 export default Books

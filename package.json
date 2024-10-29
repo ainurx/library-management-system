@@ -12,13 +12,21 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "bcrypt": "^5.1.1",
+    "body-parser": "^1.20.3",
+    "cors": "^2.8.5",
     "dotenv": "^16.4.5",
     "express": "^4.21.0",
+    "jsonwebtoken": "^9.0.2",
+    "lodash": "^4.17.21",
     "mysql2": "^3.11.3",
     "sequelize": "^6.37.4"
   },
   "devDependencies": {
+    "@types/bcrypt": "^5.0.2",
+    "@types/cors": "^2.8.17",
     "@types/express": "^5.0.0",
+    "@types/lodash": "^4.17.12",
     "@types/node": "^22.7.4",
     "nodemon": "^3.1.7",
     "sequelize-cli": "^6.6.2",
